@@ -1,0 +1,20 @@
+(base) baron1723@InazunoMacBook-puro git_challenge % cd /Users/baron1723/Downloads
+(base) baron1723@InazunoMacBook-puro Downloads % mkdir git_challenge
+(base) baron1723@InazunoMacBook-puro Downloads % cd git_challenge
+(base) baron1723@InazunoMacBook-puro git_challenge % git init
+Initialized empty Git repository in /Users/baron1723/Downloads/git_challenge/.git/
+(base) baron1723@InazunoMacBook-puro git_challenge % git add /Users/baron1723/Downloads/git_challenge/hello_world.txt
+
+(base) baron1723@InazunoMacBook-puro git_challenge % git commit -m "hello_world.txtを追加"
+[main (root-commit) 9d35f09] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+
+(base) baron1723@InazunoMacBook-puro git_challenge % git add /Users/baron1723/Downloads/git_challenge/hello_world.txt
+(base) baron1723@InazunoMacBook-puro git_challenge % git commit -m "日本語訳を追記"
+[main 7c31151] 日本語訳を追記
+ 1 file changed, 2 insertions(+)
+
+(base) baron1723@InazunoMacBook-puro git_challenge % git log --oneline
+7c31151 (HEAD -> main) 日本語訳を追記
+9d35f09 hello_world.txtを追加
