@@ -12,6 +12,8 @@
         
     </head>
     <body>
+        <!-- bodyタグの中にformタグを入れてフォームを作る -->
+        <form>
         <header>
             <h1>SAMURAIニュース</h1>
             <nav>
@@ -62,9 +64,9 @@
                         <!--性別（男性、女性、その他からラジオボタンで選べるようにする）  -->
                         <label>性別</label>
                         <!-- ラジオタグでラジオボタンを追加 -->
-                        <label>男性</label><input type="radio" name="male">
-                        <label>女性</label><input type="radio" name="female">  
-                        <label>その他</label><input type="radio" name="other">
+                        <label>男性</label><input type="radio" name="gender">
+                        <label>女性</label><input type="radio" name="gender">  
+                        <label>その他</label><input type="radio" name="gender">
                         <br>
 
                         <!-- おすすめ和菓子の名称（記入例として「例：みたらし団子」と表示させる） -->
@@ -112,5 +114,6 @@
         <footer>
             <p>&copy; SAMURAIニュース</p>    
         </footer>
+        </form>
     </body>
 </html>
