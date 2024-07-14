@@ -1,0 +1,62 @@
+
+
+/* フォントサイズはルート要素のフォントサイズを20pxにし、h1はその2倍にします。 */
+html{
+    font-size: 20px;
+}
+
+/* bodyのフォントの種類をArial,Meiryo,sans-serifにする */
+/* windowsとMac版に適用できるように調べておく? */
+/* テキストは、全て中央寄せにしてください。 */
+body{
+    font-family: "Arial", "Meiryo", sans-serif;
+    font-size: 1rem;
+    text-align: center ;
+}
+
+/* h1のフォントにはGoogleフォントのJosefin Sansを使用する。総称フォントはsans-serif */
+.setting-h1{
+    /* ここにGoogle Fontsを指定します */
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    /* h1はルート要素の２倍のサイズ */
+    font-size: 2rem;
+
+    /* h1の文字間は文字の大きさに応じて1.2倍になるようにしてください。 */
+    letter-spacing: 1.2em;
+
+    /* h1に影を付けてください。影の大きさや色は自由です。 */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+    /* h1の下に3px（カラー：rgb(115, 115, 114)）の実線を付けてください。 */
+    border-bottom: 3px solid rgb(115, 115, 114);
+}
+
+
+/* キーワード */
+.font-skyblue {
+    color: skyblue;
+}
+
+/* rgb指定 */
+.font-pink{
+    color: rgb(255, 192, 203);
+}
+
+
+/*  
+
+h1の文字間は、文字の大きさに応じて1.2倍になるようにしてください。
+h1に影を付けてください。影の大きさや色は自由です。
+h1の下に3px（カラー：rgb(115, 115, 114)）の実線を付けてください。
+「名前」～「血液型」までの要素をid属性basicのdivタグで囲います。
+次に子孫要素の考え方を利用して、「侍太郎」「1990年1月1日」「O型」を太字にしてください。
+それ以外のp要素は太字にならないよう注意してください。
+ */
+
+ #basic > p {
+    font-weight: bold;
+ }
