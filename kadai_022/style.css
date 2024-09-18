@@ -1,0 +1,164 @@
+h1 {
+    /* 余白、marginを0にする */
+    margin:0;
+}
+
+body {
+    /* 余白、marginを0にする */
+    margin:0;   
+}
+
+h2 {
+    /* h2要素のフォントサイズを25pxにし、下線（太さ3px、点線、色rgb(236, 122, 122)）を引きます。 */
+    font-size: 25px;
+    border-bottom: dotted 3px rgb(236,122,122);
+}
+
+    
+
+
+h2:before {
+    content: "●";
+    color: rgb(239, 111, 139);
+}
+
+
+
+p {
+    /* 余白、marginを0にする */
+    margin:0;
+
+    /* すべてのフォントサイズを20pxに指定 */
+    font-size: 20px;
+
+
+}
+
+a {
+     /* 余白、marginを0にする */
+     margin:0;
+    /* すべてのフォントサイズを20pxに指定 */
+    font-size: 20px;
+
+}
+
+main {
+    /* main要素内の余白を上下左右とも10pxにします。 */
+    margin: 10px;   
+}
+
+/* headerの設定 */
+
+#header-setting{
+    /* 下の余白を20pxにします */
+    margin-bottom: 20px;
+
+    /* 背景色を「 rgb(244, 79, 79)」にします。 */
+    background-color: rgb(244,79,79);
+
+    /* 中の要素が中央揃えになるようにします。 */
+    text-align: center;
+
+}
+
+#h1-setting{
+    /* 文字色をrgb(255, 255, 255)にします。 */
+    color: rgb(255,255,255);
+}
+
+
+/* divの設定 */
+#parent{
+    /* displayプロパティを使い、id名parentの要素をFlexコンテナにします*/
+    display: flex;
+    /* justify-contentプロパティでFlexboxコンテナの子要素（Flexアイテム） 
+    「一番左と一番右のアイテムも含め、均等な間隔で配置する」値を設定します。*/
+    justify-content:space-around;
+
+}
+
+
+.contents {
+    /* 線（太さ3px、実線、色rgb(238, 204, 204)）で要素を囲います。*/
+    border: solid 3px rgb(238,204,204);
+    
+    /* 幅は親要素の25%にします。プロパティはwidthではなく、flex-basisを使ってください。 */
+    flex-basis:25%;
+
+    /* 要素内の余白は上下10px、左右15pxにします。 */
+    padding: 10px 15px;
+
+    /* 要素外の余白は上下20px、左右0にします。 */
+    margin: 20px 0px;
+
+    /* 中の要素が中央揃えになるようにします。 */
+    text-align: center;
+    
+
+}
+
+/* class名contents内の二番目のp要素内のテキストの中で一番目の文字にのみ、
+以下のスタイル設定をします。nth-of-type(n)とfirst-letterを組み合わせると表現できます。 */
+.contents  p:nth-of-type(2)::first-letter {
+    /* 太字,文字色はrgb(97, 206, 249) */
+    font-weight: bold;
+    color: rgb(97,206,249);
+
+}
+
+/* class名contents内のimg要素に、以下のスタイルを設定します。*/
+.contents img {
+    /* marginは上下10px、左右0 幅は70%  */
+    margin: 10px 0;
+    width: 70%;
+}
+
+
+/* レスポンシブデザインの設定 */
+@media screen and (max-width: 768px) {
+    #parent {
+        /* displayプロパティを使い、id名parentの要素をblockにして縦に並べる*/
+        display: block;
+    }
+
+    .contents > h2 {
+            font-size: 30px;
+    }
+    .contents > p {
+            font-size: 25px;
+    }
+    
+}
+
+
+
+
+/* footerの設定 */
+
+#footer-setting{
+    /* 背景色はrgb(244, 79, 79)にします。 */
+    background-color: rgb(244,79,79);
+    /* 中身の要素が中央揃えになるようにします。 */
+    text-align: center;
+}
+
+
+#footer-setting > a{
+     /* 文字色はrgb(255, 255, 255)にします。 */
+     color: rgb(255, 255, 255);
+}
+
+#footer-setting > a:visited{
+    /* 訪問済みリンクの文字色がrgb(193, 234, 251)に変化するようにします。 */
+    color: rgb(193, 234, 251);
+}
+
+#footer-setting > a:hover{
+    /* マウスカーソルが乗ると文字色がrgb(245, 178, 168)に変化するようにします。 */
+    color: rgb(245, 178, 168);
+}
+
+
+
+
+
